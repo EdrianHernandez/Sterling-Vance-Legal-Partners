@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Lock, CheckCircle } from 'lucide-react';
 
-export const ContactForm: React.FC = () => {
-  const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
+export const ContactForm = () => {
+  const [formStatus, setFormStatus] = useState('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setFormStatus('submitting');
     // Simulate API call

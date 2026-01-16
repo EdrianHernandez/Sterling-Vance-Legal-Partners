@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Scale, Menu, X, Phone } from 'lucide-react';
 
-export const LegalNavbar: React.FC = () => {
+export const LegalNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [

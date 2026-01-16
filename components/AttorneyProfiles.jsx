@@ -1,15 +1,6 @@
 import React from 'react';
 
-interface Attorney {
-  id: number;
-  name: string;
-  role: string;
-  specialty: string;
-  image: string;
-  bio: string;
-}
-
-const attorneys: Attorney[] = [
+const attorneys = [
   {
     id: 1,
     name: "Eleanor Sterling, Esq.",
@@ -44,7 +35,7 @@ const attorneys: Attorney[] = [
   }
 ];
 
-export const AttorneyProfiles: React.FC = () => {
+export const AttorneyProfiles = () => {
   return (
     <section id="attorneys" className="py-20 bg-slate-50">
       <div className="container mx-auto px-6">

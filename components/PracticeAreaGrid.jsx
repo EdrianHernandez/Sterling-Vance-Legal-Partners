@@ -1,13 +1,7 @@
 import React from 'react';
 import { Briefcase, Gavel, Scale, Globe, Building2, FileText, Landmark, Users } from 'lucide-react';
 
-interface PracticeArea {
-  title: string;
-  description: string;
-  icon: React.ReactNode;
-}
-
-const practices: PracticeArea[] = [
+const practices = [
   {
     title: "Corporate Law",
     description: "Structuring complex mergers, acquisitions, and corporate governance for multinational entities.",
@@ -40,7 +34,7 @@ const practices: PracticeArea[] = [
   },
 ];
 
-export const PracticeAreaGrid: React.FC = () => {
+export const PracticeAreaGrid = () => {
   return (
     <section id="practice-areas" className="py-20 bg-white">
       <div className="container mx-auto px-6">

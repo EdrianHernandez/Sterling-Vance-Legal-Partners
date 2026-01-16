@@ -5,7 +5,7 @@ import { AttorneyProfiles } from './components/AttorneyProfiles';
 import { ContactForm } from './components/ContactForm';
 import { Shield, Award, Clock } from 'lucide-react';
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <div className="min-h-screen flex flex-col font-sans text-slate-800">
       <LegalNavbar />
